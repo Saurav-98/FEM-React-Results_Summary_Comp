@@ -1,0 +1,59 @@
+/* Custom Variables */
+
+:root {
+  /* ## Colors */
+
+  /* ### Primary */
+  --clr-light-red: hsl(0, 100%, 67%);
+  --clr-orange-yellow: hsl(39, 100%, 56%);
+  --clr-green-teal: hsl(166, 100%, 37%);
+  --clr-cobalt-blue: hsl(234, 85%, 45%);
+
+  /* ## Gradients */
+  --grad-lt-slate-blue: hsl(252, 100%, 67%);
+  --grad-lt-royal-blue: hsl(241, 81%, 54%);
+
+  --grad-vlt-blue: hsla(256, 72%, 46%, 1);
+  --grad-persian-blue: hsla(241, 72%, 46%, 0);
+
+  /* ### Neutral */
+
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-pale-blue: hsl(221, 100%, 96%);
+  --clr-lt-lavender: hsl(241, 100%, 89%);
+  --clr-gray-blue: hsl(224, 30%, 27%);
+}
+
+/* General CSS */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 18px;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--clr-pale-blue);
+  font-size: 1.8rem;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+.card {
+  background-color: var(--clr-white);
+  max-width: 73.6rem;
+  margin-inline: auto;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%); */
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card__blue {
+  background-color: var(--grad-lt-royal-blue);
+}
